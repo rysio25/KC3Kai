@@ -652,7 +652,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, response){
 	if((request.identifier||"") == "kc3_gamescreen"){
 		// If action requested is supported
 		if(typeof interactions[request.action] !== "undefined"){
-			ConfigManager.loadIfNecessary();
+//			ConfigManager.loadIfNecessary();
 			// Execute the action
 			interactions[request.action](request, sender, response);
 			return true;
